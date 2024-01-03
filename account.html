@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Axtrion Live</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/library.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/shorts.css">
+    <link rel="stylesheet" href="css/profile.css">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="css/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="css/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="css/favicon/favicon-16x16.png">
+    <link rel="manifest" href="css/favicon/site.webmanifest">
+    <link rel="mask-icon" href="css/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="css/favicon/favicon.ico">
+    <meta name="msapplication-config" content="css/favicon/browserconfig.xml">
+
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- == Font == -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- == Icons == -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" crossorigin="anonymous" />
+
+</head>
+<body>
+    <nav>
+        <div class="nav-container container flex fl-bt">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="css/media/Images/logo.png" alt="Axtrion">
+                </a>
+            </div>
+            <div class="links flex fl-bt">
+                <div class="nav-pg-link flex fl-bt">
+                    <!-- <a href="#">Home</a>
+                    <a href="#">Services</a> -->
+                </div>
+                <div class="nav-ac-access flex fl-bt">
+                    <!-- <a href="login.html">Login</a>
+                    <a href="register.html">Register</a> -->
+                    <a href="upload.html">Upload</a>
+                    <div class="nav-ac-profile flex fl-bt">
+                        <div class="notification-bell">
+                            <div class="notifcation-status"></div>
+                            <div class="bell">
+                                <i class="fa-solid fa-bell"></i>
+                            </div>
+                        </div>
+                        <div class="profile-drop">
+                            <button class="dropbtn profile">
+                                <img src="css/media/Images/profile.jpg" alt="">
+                            </button>
+                            <div class="dropdown-content">
+                                <a href=""><i class="fa-solid fa-user"></i> Account</a>
+                                <a href=""><i class="fa-solid fa-gear"></i> Settings</a>
+                                <a href=""><i class="fa-solid fa-right-from-bracket"></i> Logout</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <div class="account-container container">
+            <div class="account-info flex flex-start">
+                <div class="acc-profile-image">
+                    <img src="css/media/Images/profile.jpg" alt="Axtrion">
+                </div>
+                <div class="account-profile-follow">
+                    <h2>Chebon Kelvin</h2>
+                    <p>Welcome to my channel you all to my channel again and again</p>
+                    <div class="following">
+                        <div class="followers">
+                            <span><strong>20M</strong> Followers</span>
+                            <span><strong>20</strong> Following</span>
+                        </div>
+                    </div>
+                    <button class="btn-edit-profile"><i class="fa-solid fa-pen-to-square"></i> Edit Profile</button>
+                </div>
+            </div>
+            <div class="profile-uploads">
+                <div class="profile-acc-tabs">
+                    <div id="profile-acc-videos-tab" class="profile-acc-tab active" onclick="showProfileAccTab('videos')"><i class="fa-solid fa-video"></i> Videos</div>
+                    <div id="profile-acc-shorts-tab" class="profile-acc-tab" onclick="showProfileAccTab('shorts')"><i class="fa-solid fa-film"></i> Shorts</div>
+                    <div id="profile-acc-likes-tab" class="profile-acc-tab" onclick="showProfileAccTab('likes')"><i class="fa-solid fa-thumbs-up"></i> Likes</div>
+                  </div>
+                  
+                  <div id="profile-acc-videos" class="profile-acc-tab-content active-profile-acc-content">
+                    <div class="video-content flex flex-wrap">
+                        <div class="video">
+                            <div class="thumbnail account">
+                                <img src="css/media/Images/Thumbnails/Dark Grey Minimalist Photo Travel YouTube Thumbnail.png" alt="Axtrion">
+                                <div class="play-button flex">
+                                    <i class="fa-solid fa-play"></i>
+                                    <span>12K</span>
+                                </div>
+                            </div>
+                           <div class="account-short-details flex">
+                                <div class="card">
+                                    <span class="icon">
+                                        <i class="fa-solid fa-thumbs-up"></i>
+                                    </span>
+                                    <span class="text">
+                                        12
+                                    </span>
+                                </div>
+                                <div class="card">
+                                    <span class="icon">
+                                        <i class="fa-solid fa-comment"></i>
+                                    </span>
+                                    <span class="text">
+                                        24
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="video">
+                            <div class="thumbnail account">
+                                <img src="css/media/Images/Thumbnails/Yellow & Black Earn Money YouTube Thumbnail.png" alt="Axtrion">
+                                <div class="play-button flex">
+                                    <i class="fa-solid fa-play"></i>
+                                    <span>12K</span>
+                                </div>
+                            </div>
+                            <div class="account-short-details flex">
+                                <div class="card">
+                                    <span class="icon">
+                                        <i class="fa-solid fa-thumbs-up"></i>
+                                    </span>
+                                    <span class="text">
+                                        12
+                                    </span>
+                                </div>
+                                <div class="card">
+                                    <span class="icon">
+                                        <i class="fa-solid fa-comment"></i>
+                                    </span>
+                                    <span class="text">
+                                        24
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="video">
+                            <div class="thumbnail account">
+                                <img src="css/media/Images/Thumbnails/videos/Dodge.PNG" alt="Axtrion">
+                                <div class="play-button flex">
+                                    <i class="fa-solid fa-play"></i>
+                                    <span>12K</span>
+                                </div>
+                            </div>
+                           <div class="account-short-details flex">
+                                <div class="card">
+                                    <span class="icon">
+                                        <i class="fa-solid fa-thumbs-up"></i>
+                                    </span>
+                                    <span class="text">
+                                        12
+                                    </span>
+                                </div>
+                                <div class="card">
+                                    <span class="icon">
+                                        <i class="fa-solid fa-comment"></i>
+                                    </span>
+                                    <span class="text">
+                                        24
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="video">
+                            <div class="thumbnail account">
+                                <img src="css/media/Images/Thumbnails/videos/mustang thumb.PNG" alt="Axtrion">
+                                <div class="play-button flex">
+                                    <i class="fa-solid fa-play"></i>
+                                    <span>12K</span>
+                                </div>
+                            </div>
+                           <div class="account-short-details flex">
+                                <div class="card">
+                                    <span class="icon">
+                                        <i class="fa-solid fa-thumbs-up"></i>
+                                    </span>
+                                    <span class="text">
+                                        12
+                                    </span>
+                                </div>
+                                <div class="card">
+                                    <span class="icon">
+                                        <i class="fa-solid fa-comment"></i>
+                                    </span>
+                                    <span class="text">
+                                        24
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="video">
+                            <div class="thumbnail account">
+                                <img src="css/media/Images/Thumbnails/videos/r34 thumb.PNG" alt="Axtrion">
+                                <div class="play-button flex">
+                                    <i class="fa-solid fa-play"></i>
+                                    <span>12K</span>
+                                </div>
+                            </div>
+                            <div class="account-short-details flex">
+                                <div class="card">
+                                    <span class="icon">
+                                        <i class="fa-solid fa-thumbs-up"></i>
+                                    </span>
+                                    <span class="text">
+                                        12
+                                    </span>
+                                </div>
+                                <div class="card">
+                                    <span class="icon">
+                                        <i class="fa-solid fa-comment"></i>
+                                    </span>
+                                    <span class="text">
+                                        24
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="video">
+                            <div class="thumbnail account">
+                                <img src="css/media/Images/Thumbnails/videos/R34 thumbnail.PNG" alt="Axtrion">
+                                <div class="play-button flex">
+                                    <i class="fa-solid fa-play"></i>
+                                    <span>12K</span>
+                                </div>
+                            </div>
+                           <div class="account-short-details flex">
+                                <div class="card">
+                                    <span class="icon">
+                                        <i class="fa-solid fa-thumbs-up"></i>
+                                    </span>
+                                    <span class="text">
+                                        12
+                                    </span>
+                                </div>
+                                <div class="card">
+                                    <span class="icon">
+                                        <i class="fa-solid fa-comment"></i>
+                                    </span>
+                                    <span class="text">
+                                        24
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                  
+                  <div id="profile-acc-shorts" class="profile-acc-tab-content">
+                    <div class="shorts-content">
+                        <div class="short-contents-videos flex">
+                            <div class="short-video">
+                                <div class="short-thumbnail account">
+                                    <img src="css/media/Images/Thumbnails/Shorts/apocalypse.jpg" alt="Axtrion">
+                                    <div class="play-button flex">
+                                    <i class="fa-solid fa-play"></i>
+                                    <span>12K</span>
+                                </div>
+                                </div>
+                                <div class="account-short-details flex">
+                                <div class="card">
+                                    <span class="icon">
+                                        <i class="fa-solid fa-thumbs-up"></i>
+                                    </span>
+                                    <span class="text">
+                                        12
+                                    </span>
+                                </div>
+                                <div class="card">
+                                    <span class="icon">
+                                        <i class="fa-solid fa-comment"></i>
+                                    </span>
+                                    <span class="text">
+                                        24
+                                    </span>
+                                </div>
+                            </div>
+                            </div>
+                            <div class="short-video">
+                                <div class="short-thumbnail account">
+                                    <img src="css/media/Images/Thumbnails/Shorts/joe jackson.jpg" alt="Axtrion">
+                                    <div class="play-button flex">
+                                    <i class="fa-solid fa-play"></i>
+                                    <span>12K</span>
+                                </div>
+                                </div>
+                                <div class="account-short-details flex">
+                                <div class="card">
+                                    <span class="icon">
+                                        <i class="fa-solid fa-thumbs-up"></i>
+                                    </span>
+                                    <span class="text">
+                                        12
+                                    </span>
+                                </div>
+                                <div class="card">
+                                    <span class="icon">
+                                        <i class="fa-solid fa-comment"></i>
+                                    </span>
+                                    <span class="text">
+                                        24
+                                    </span>
+                                </div>
+                            </div>
+                            </div>
+                            <div class="short-video">
+                                <div class="short-thumbnail account">
+                                    <img src="css/media/Images/Thumbnails/Shorts/oardefault.jpg" alt="Axtrion">
+                                    <div class="play-button flex">
+                                    <i class="fa-solid fa-play"></i>
+                                    <span>12K</span>
+                                </div>
+                                </div>
+                                <div class="account-short-details flex">
+                                <div class="card">
+                                    <span class="icon">
+                                        <i class="fa-solid fa-thumbs-up"></i>
+                                    </span>
+                                    <span class="text">
+                                        12
+                                    </span>
+                                </div>
+                                <div class="card">
+                                    <span class="icon">
+                                        <i class="fa-solid fa-comment"></i>
+                                    </span>
+                                    <span class="text">
+                                        24
+                                    </span>
+                                </div>
+                            </div>
+                            </div>
+                            <div class="short-video">
+                                <div class="short-thumbnail account">
+                                    <img src="css/media/Images/Thumbnails/Shorts/apocalypse.jpg" alt="Axtrion">
+                                    <div class="play-button flex">
+                                    <i class="fa-solid fa-play"></i>
+                                    <span>12K</span>
+                                </div>
+                                </div>
+                                <div class="account-short-details flex">
+                                <div class="card">
+                                    <span class="icon">
+                                        <i class="fa-solid fa-thumbs-up"></i>
+                                    </span>
+                                    <span class="text">
+                                        12
+                                    </span>
+                                </div>
+                                <div class="card">
+                                    <span class="icon">
+                                        <i class="fa-solid fa-comment"></i>
+                                    </span>
+                                    <span class="text">
+                                        24
+                                    </span>
+                                </div>
+                            </div>
+                            </div>
+                            <div class="short-video">
+                                <div class="short-thumbnail account">
+                                    <img src="css/media/Images/Thumbnails/Shorts/joe jackson.jpg" alt="Axtrion">
+                                    <div class="play-button flex">
+                                    <i class="fa-solid fa-play"></i>
+                                    <span>12K</span>
+                                </div>
+                                </div>
+                                <div class="account-short-details flex">
+                                <div class="card">
+                                    <span class="icon">
+                                        <i class="fa-solid fa-thumbs-up"></i>
+                                    </span>
+                                    <span class="text">
+                                        12
+                                    </span>
+                                </div>
+                                <div class="card">
+                                    <span class="icon">
+                                        <i class="fa-solid fa-comment"></i>
+                                    </span>
+                                    <span class="text">
+                                        24
+                                    </span>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                  
+                  <div id="profile-acc-likes" class="profile-acc-tab-content">
+                    <!-- Likes Content Goes Here -->
+                    <p>Likes content goes here.</p>
+                  </div>
+            </div>
+        </div>
+    </main>
+    <script src="js/script.js"></script>
+    <script>
+        function showProfileAccTab(tabName) {
+          // Hide all tab contents
+          var tabContents = document.getElementsByClassName('profile-acc-tab-content');
+          for (var i = 0; i < tabContents.length; i++) {
+            tabContents[i].classList.remove('active-profile-acc-content');
+          }
+      
+          // Deactivate all tabs
+          var tabs = document.getElementsByClassName('profile-acc-tab');
+          for (var i = 0; i < tabs.length; i++) {
+            tabs[i].classList.remove('active');
+          }
+      
+          // Show the selected tab content
+          document.getElementById('profile-acc-' + tabName).classList.add('active-profile-acc-content');
+      
+          // Activate the selected tab
+          document.getElementById('profile-acc-' + tabName + '-tab').classList.add('active');
+        }
+      </script>
+</body>
+</html>
